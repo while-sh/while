@@ -1,0 +1,8 @@
+apiVersion: while/v1
+project: nextjs-internal
+services:
+  - name: web
+    port: 3000
+    access: internal
+    health:
+      path: /

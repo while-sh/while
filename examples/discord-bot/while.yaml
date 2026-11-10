@@ -1,0 +1,8 @@
+apiVersion: while/v1
+project: discord-bot
+services:
+  - name: bot
+    type: worker
+    command: [node, bot.js]
+network:
+  egress: all

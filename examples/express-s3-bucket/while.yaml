@@ -1,0 +1,9 @@
+apiVersion: while/v1
+project: express-s3-bucket
+services:
+  - name: web
+    port: 3000
+    health:
+      path: /health
+buckets:
+  - name: uploads

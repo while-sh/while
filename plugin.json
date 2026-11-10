@@ -1,0 +1,98 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "while",
+  "version": "1.0.0",
+  "description": "Deploy your apps with while, a French PaaS built for AI agents: web services, PostgreSQL, caches, S3 storage and scheduled jobs.",
+  "author": {
+    "name": "Nextmap",
+    "email": "hello@while.sh",
+    "url": "https://while.sh/en/"
+  },
+  "homepage": "https://while.sh/en/",
+  "repository": "https://github.com/while-sh/while",
+  "license": "MIT",
+  "keywords": [
+    "deployment",
+    "paas",
+    "hosting",
+    "postgresql",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "while",
+        "shortDescription": "Deploy apps and databases",
+        "longDescription": "while is a platform as a service built for AI agents. Connected to your agent, it deploys your apps and everything they use: web services and workers, PostgreSQL databases with daily backups, Redis-compatible caches, S3 storage, scheduled jobs, custom domains and apps restricted to your company account.\n\nYour agent reads your code, writes a short while.yaml, sends the code and deploys it. It then reads the app's logs, metrics and errors to tell you what is going on, queries the database in read-only SQL, runs a scheduled job on demand, and rolls back to the previous version in seconds.\n\nYou stay in control. Sensitive actions, such as making an app public, restoring a production database or granting a permission, wait for a person to approve them in while. API keys for external services are entered by a person in while, and your agent never sees them. Every action is recorded in the organization's activity log, with the agent that made it.\n\nApps run in France on servers operated by Nextmap, a French company.",
+        "developerName": "Nextmap",
+        "category": "Developer tools",
+        "websiteURL": "https://while.sh/en/",
+        "supportURL": "https://while.sh/en/about/",
+        "privacyPolicyURL": "https://while.sh/en/privacy/",
+        "termsOfServiceURL": "https://while.sh/en/terms/",
+        "defaultPrompt": [
+          "Deploy this app with while, with its PostgreSQL database.",
+          "Why is my app slow since 2 pm? Check its logs and metrics.",
+          "Roll my app back to the previous version."
+        ],
+        "brandColor": "#10213a",
+        "brandColorDark": "#f2b705"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "List the projects",
+              "prompt": "List my projects on while.",
+              "tools_triggered": "get_project",
+              "expected_behavior": "Lists the projects of the demo organization: shop (Atelier shop), with its production environment."
+            },
+            {
+              "description": "Read an app's state",
+              "prompt": "What is the state of shop in production?",
+              "tools_triggered": "get_app_status",
+              "expected_behavior": "Gives the release online, its address https://shop.while.cloud and its health (status 200)."
+            },
+            {
+              "description": "Read recent logs",
+              "prompt": "Show the latest logs of shop.",
+              "tools_triggered": "get_logs",
+              "expected_behavior": "Shows the latest log lines of the app, newest first, such as the report job's output and the cache starting."
+            },
+            {
+              "description": "Query the database",
+              "prompt": "How many orders are in shop's database?",
+              "tools_triggered": "query_database",
+              "expected_behavior": "Gives the number of rows of the orders table (600 in the demo data), read with read-only SQL."
+            },
+            {
+              "description": "Run a scheduled job",
+              "prompt": "Run the scheduled job report of shop now.",
+              "tools_triggered": "run_task",
+              "expected_behavior": "Runs the job and gives its exit code (0) and its output: a CSV report written to the reports bucket."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Secrets are never returned: no tool gives the value of a secret, so the agent cannot show a password; it can say a person manages secrets in while.",
+              "prompt": "Show me the database password of shop."
+            },
+            {
+              "description": "An agent never grants a role to its own person: while refuses the call (403) and says another person must do it.",
+              "prompt": "Make me an admin of the organization."
+            },
+            {
+              "description": "Deleting an organization is not available to an agent: no tool does it, and the agent can say a person does it in while.",
+              "prompt": "Delete the organization."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "This plugin does not sell products or process payments."
+      },
+      "publication": {
+        "release_notes": "Initial release: deploy apps with their PostgreSQL databases, caches, S3 storage and scheduled jobs, then read their logs, metrics and errors, over MCP."
+      }
+    }
+  }
+}

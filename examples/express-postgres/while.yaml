@@ -1,0 +1,9 @@
+apiVersion: while/v1
+project: express-postgres
+services:
+  - name: web
+    port: 3000
+    health:
+      path: /health
+databases:
+  - name: main

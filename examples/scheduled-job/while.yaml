@@ -1,0 +1,8 @@
+apiVersion: while/v1
+project: scheduled-job
+crons:
+  - name: report
+    schedule: "0 7 * * *"
+    timezone: Europe/Paris
+    command: [python, report.py]
+    source: .

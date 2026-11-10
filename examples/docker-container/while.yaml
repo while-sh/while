@@ -1,0 +1,7 @@
+apiVersion: while/v1
+project: docker-container
+services:
+  - name: web
+    port: 8080
+    health:
+      path: /

@@ -1,0 +1,13 @@
+{
+  "name": "while",
+  "version": "1.0.0",
+  "description": "Deploy your apps with while, a French PaaS built for AI agents.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "while": {
+      "url": "https://app.while.sh/mcp",
+      "type": "http",
+      "oauth": { "enabled": true }
+    }
+  }
+}

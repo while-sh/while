@@ -1,0 +1,10 @@
+apiVersion: while/v1
+project: express-cache
+services:
+  - name: web
+    port: 3000
+    health:
+      path: /health
+caches:
+  - name: cache
+    memory: 256Mi

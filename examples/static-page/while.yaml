@@ -1,0 +1,6 @@
+apiVersion: while/v1
+project: static-page
+services:
+  - name: web
+    type: static
+    root: .
