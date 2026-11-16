@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "while": {
+      "type": "http",
+      "url": "https://app.while.sh/mcp"
+    }
+  }
+}

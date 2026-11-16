@@ -1,0 +1,10 @@
+{
+  "name": "while",
+  "version": "1.0.0",
+  "description": "Deploy your apps from Claude Code with while, a French PaaS built for AI agents: web services, PostgreSQL, caches, S3 storage and scheduled jobs.",
+  "author": { "name": "Nextmap", "email": "hello@while.sh", "url": "https://while.sh/en/" },
+  "homepage": "https://while.sh/en/",
+  "repository": "https://github.com/while-sh/while",
+  "license": "MIT",
+  "keywords": ["deployment", "paas", "hosting", "postgresql", "mcp"]
+}

@@ -1,6 +1,6 @@
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://while.sh/icon-dark.png"><img src="https://while.sh/icon-light.png" width="96" height="96" alt=""></picture></p>
 
-# while
+# while.sh
 
 while is a French PaaS built for AI agents. Over MCP, your agent deploys your apps and everything they use: PostgreSQL
 databases, caches, S3 storage, scheduled jobs, domains and private access. Sensitive actions wait for a person's

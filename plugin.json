@@ -21,7 +21,7 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "while",
+        "displayName": "while.sh",
         "shortDescription": "Deploy apps and databases",
         "longDescription": "while is a platform as a service built for AI agents. Connected to your agent, it deploys your apps and everything they use: web services and workers, PostgreSQL databases with daily backups, Redis-compatible caches, S3 storage, scheduled jobs, custom domains and apps restricted to your company account.\n\nYour agent reads your code, writes a short while.yaml, sends the code and deploys it. It then reads the app's logs, metrics and errors to tell you what is going on, queries the database in read-only SQL, runs a scheduled job on demand, and rolls back to the previous version in seconds.\n\nYou stay in control. Sensitive actions, such as making an app public, restoring a production database or granting a permission, wait for a person to approve them in while. API keys for external services are entered by a person in while, and your agent never sees them. Every action is recorded in the organization's activity log, with the agent that made it.\n\nApps run in France on servers operated by Nextmap, a French company.",
         "developerName": "Nextmap",

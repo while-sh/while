@@ -1,0 +1,12 @@
+{
+  "name": "while-sh",
+  "description": "The while plugin: deploy your apps from Claude Code.",
+  "owner": { "name": "Nextmap", "email": "hello@while.sh" },
+  "plugins": [
+    {
+      "name": "while",
+      "source": "./",
+      "description": "Deploy your apps with while: web services, PostgreSQL, caches, S3 storage and scheduled jobs."
+    }
+  ]
+}
