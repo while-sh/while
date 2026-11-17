@@ -2,9 +2,11 @@
 
 # while.sh
 
-while is a French PaaS built for AI agents. Over MCP, your agent deploys your apps and everything they use: PostgreSQL
-databases, caches, S3 storage, scheduled jobs, domains and private access. Sensitive actions wait for a person's
-approval, and your agent never sees the API keys of your external services. Hosted in France by Nextmap.
+while (while.sh) puts the apps your agent builds online, for your team only or for everyone. Claude, ChatGPT, Cursor or
+any MCP agent deploys the app with what it needs: a PostgreSQL database backed up every day, scheduled jobs, file
+storage, a custom domain and, for an internal app, sign-in with your company account. Credentials for other services
+stay in while, never in the code or the chat, and sensitive actions wait for a person's approval. Hosted in France by
+Nextmap.
 
 This repository holds what you need to connect your agent to while, and example apps that deploy as they are.
 
@@ -19,8 +21,11 @@ while and authorize your agent.
 The simplest way: paste this into your agent.
 
 ```text
-Connect to while with my account (while.sh/agents), then deploy my app.
+Read while.sh/agents and help me get started with while.
 ```
+
+Your agent connects with your account if you have one. Without one, it deploys your app as a trial and gives you
+the link to keep it.
 
 Or connect it yourself:
 
@@ -32,9 +37,6 @@ Or connect it yourself:
 | Cursor, VS Code | The buttons above |
 | Claude, ChatGPT, Mistral Vibe | Add a custom connector with the server address above |
 | All of them at once | `curl -fsSL https://app.while.sh/install.sh \| sh` (writes only their config files, in your home folder) |
-
-No account yet? Paste `Read while.sh/agents, then deploy my app with while.` into your agent: it deploys your app as a
-trial, without an account, and gives you the link to keep it.
 
 ## Example apps
 

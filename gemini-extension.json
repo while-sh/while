@@ -1,7 +1,7 @@
 {
   "name": "while",
   "version": "1.0.0",
-  "description": "Deploy your apps with while, a French PaaS built for AI agents.",
+  "description": "Deploy the apps your agent builds, for your team only or for everyone. Hosted in France.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
     "while": {

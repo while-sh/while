@@ -1,7 +1,8 @@
 # while
 
-while is a PaaS built for AI agents. Its MCP server (`while`) deploys apps and what they use: web services, workers,
-PostgreSQL databases, Redis-compatible caches, S3 buckets and scheduled jobs.
+while puts the apps an agent builds online, for the user's team only or for everyone. Its MCP server (`while`) deploys
+them with what they use: web services, workers, PostgreSQL databases, Redis-compatible caches, S3 buckets and scheduled
+jobs.
 
 - Read the contract once (`get_catalog`), then write a `while.yaml` at the root of the app
   (schema: https://app.while.sh/schema/while.v1.json).

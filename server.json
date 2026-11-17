@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "sh.while/while",
   "title": "while.sh",
-  "description": "French PaaS built for AI agents: deploy apps, PostgreSQL, caches, S3 and jobs over MCP.",
-  "version": "2.1.0",
+  "description": "Your agent deploys the apps it builds, for your team only or for everyone, hosted in France.",
+  "version": "2.1.1",
   "websiteUrl": "https://while.sh/en/",
   "icons": [
     { "src": "https://while.sh/icon-light.png", "mimeType": "image/png", "sizes": ["1024x1024"], "theme": "light" },
