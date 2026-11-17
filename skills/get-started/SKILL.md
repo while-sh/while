@@ -6,10 +6,9 @@ description: Deploy an app with while, the PaaS for AI agents, over its MCP serv
 # Deploy with while
 
 while hosts web services, workers, PostgreSQL databases, Redis-compatible caches, S3 buckets and scheduled jobs. Its MCP
-server is `https://app.while.sh/mcp`; the person signs in to while in their browser on first use.
-
-No account yet? Read https://while.sh/agents: without an account and without a card, you can deploy the app as a
-trial, and give the person the link to keep it.
+server is `https://app.while.sh/mcp/connector`. Without an account, you can deploy the app right away as a free trial,
+with no sign-up and no card, and give the person the link to keep it. When a tool needs their account, the server asks
+them to sign in in their browser. More: https://while.sh/agents
 
 ## The usual path
 

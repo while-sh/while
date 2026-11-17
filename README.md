@@ -10,13 +10,13 @@ Nextmap.
 
 This repository holds what you need to connect your agent to while, and example apps that deploy as they are.
 
-[![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=while&config=eyJ1cmwiOiJodHRwczovL2FwcC53aGlsZS5zaC9tY3AifQ==)
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_while-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=while&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapp.while.sh%2Fmcp%22%7D)
+[![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=while&config=eyJ1cmwiOiJodHRwczovL2FwcC53aGlsZS5zaC9tY3AvY29ubmVjdG9yIn0=)
+[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_while-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=while&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapp.while.sh%2Fmcp%2Fconnector%22%7D)
 
 ## Connect your agent
 
-The MCP server is `https://app.while.sh/mcp` (Streamable HTTP). On first use, a page opens in your browser: sign in to
-while and authorize your agent.
+The MCP server is `https://app.while.sh/mcp/connector` (Streamable HTTP). Without an account, your agent deploys right away,
+as a free trial. When a tool needs your account, a page opens in your browser: sign in to while and authorize your agent.
 
 The simplest way: paste this into your agent.
 
@@ -24,15 +24,15 @@ The simplest way: paste this into your agent.
 Read while.sh/agents and help me get started with while.
 ```
 
-Your agent connects with your account if you have one. Without one, it deploys your app as a trial and gives you
-the link to keep it.
+Your agent connects with your account if you have one. Without one, it deploys your app as a free trial and gives
+you the link to keep it.
 
 Or connect it yourself:
 
 | Agent | How |
 |---|---|
-| Claude Code | `claude mcp add --transport http --scope user while https://app.while.sh/mcp`, or this repository as a plugin: `/plugin marketplace add while-sh/while`, then `/plugin install while@while-sh` |
-| Codex | `codex mcp add while --url https://app.while.sh/mcp`, then `codex mcp login while` |
+| Claude Code | `claude mcp add --transport http --scope user while https://app.while.sh/mcp/connector`, or this repository as a plugin: `/plugin marketplace add while-sh/while`, then `/plugin install while@while-sh` |
+| Codex | `codex mcp add while --url https://app.while.sh/mcp/connector`, then `codex mcp login while` |
 | Gemini CLI | `gemini extensions install https://github.com/while-sh/while` |
 | Cursor, VS Code | The buttons above |
 | Claude, ChatGPT, Mistral Vibe | Add a custom connector with the server address above |

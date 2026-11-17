@@ -1,7 +1,7 @@
 {
   "name": "while",
   "version": "1.0.0",
-  "description": "Deploy the apps you build with Claude Code, for your team only or for everyone. Web services, PostgreSQL, scheduled jobs and storage included. Hosted in France.",
+  "description": "Deploy the apps you build with Claude Code, for your team only or for everyone. Web services, PostgreSQL, scheduled jobs and storage included. Free to try without an account. Hosted in France.",
   "author": { "name": "Nextmap", "email": "hello@while.sh", "url": "https://while.sh/en/" },
   "homepage": "https://while.sh/en/",
   "repository": "https://github.com/while-sh/while",

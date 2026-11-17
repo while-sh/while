@@ -1,11 +1,11 @@
 {
   "name": "while",
   "version": "1.0.0",
-  "description": "Deploy the apps your agent builds, for your team only or for everyone. Hosted in France.",
+  "description": "Deploy the apps your agent builds, for your team only or for everyone. Free to try without an account. Hosted in France.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
     "while": {
-      "url": "https://app.while.sh/mcp",
+      "url": "https://app.while.sh/mcp/connector",
       "type": "http",
       "oauth": { "enabled": true }
     }
