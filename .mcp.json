@@ -2,7 +2,7 @@
   "mcpServers": {
     "while": {
       "type": "http",
-      "url": "https://app.while.sh/mcp/connector"
+      "url": "https://app.while.sh/mcp"
     }
   }
 }
