@@ -1,6 +1,6 @@
 # while
 
-while (while.sh) puts the tools people build with their AI online, and they choose who uses them: their colleagues, a
+while (while.sh) hosts the tools people build with an AI agent, and they choose who to share them with: their team, a
 client or a supplier with a link and a password, or everyone. Its MCP server (`while`) deploys each of these tools as an
 app, with what it uses: web services, workers, PostgreSQL databases, Redis-compatible caches, S3 buckets and scheduled
 jobs.

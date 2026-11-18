@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "sh.while/while",
   "title": "while.sh",
-  "description": "Tools built with Claude or ChatGPT, online for your team, a client or everyone. No sign-up.",
-  "version": "2.2.2",
+  "description": "Deploy and share tools built with Claude or ChatGPT: your team, a client or everyone. No sign-up.",
+  "version": "2.2.3",
   "websiteUrl": "https://while.sh/en/",
   "icons": [
     { "src": "https://while.sh/icon-light.png", "mimeType": "image/png", "sizes": ["1024x1024"], "theme": "light" },

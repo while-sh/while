@@ -1,7 +1,7 @@
 {
   "name": "while",
   "version": "1.0.0",
-  "description": "Tools built with Claude Code, online for your team, a client or everyone. No sign-up. Each tool keeps your data, backed up every day, and your files. Its automations run at a set time. Hosted in France.",
+  "description": "Deploy and share tools built with Claude Code: your team, a client or everyone. No sign-up. Each tool has its PostgreSQL database backed up every day, storage and scheduled jobs. Hosted in France.",
   "author": { "name": "Nextmap", "email": "hello@while.sh", "url": "https://while.sh/en/" },
   "homepage": "https://while.sh/en/",
   "repository": "https://github.com/while-sh/while",

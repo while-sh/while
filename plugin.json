@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "while",
   "version": "1.0.0",
-  "description": "Tools built with your AI, online for your team, a client or everyone. Each tool keeps your data, backed up every day, and your files. Its automations run at a set time. Hosted in France.",
+  "description": "Deploy and share tools built with your AI agent: your team, a client or everyone. Each tool has its PostgreSQL database backed up every day, storage and scheduled jobs. Hosted in France.",
   "author": {
     "name": "Nextmap",
     "email": "hello@while.sh",
@@ -24,7 +24,7 @@
       "interface": {
         "displayName": "while.sh",
         "shortDescription": "Share tools or put them online",
-        "longDescription": "You built a tool with your AI. It works, but it stays in the conversation, and no one else can use it.\n\nWith while.sh, your AI puts it online, and the tool has its own address in 3 minutes. You choose who uses it. When you share it with your colleagues, only they can use it. A client or a supplier uses it with an access link, valid for 1, 7 or 30 days, and a password your AI never sees. For everyone to use it, a person on your team approves first.\n\nThe tool keeps your data, backed up every day. You can put this data back as it was at any point in the last 14 days, once a person has approved. The tool also keeps your files. Its automations run at a set time, every Monday at 8 for example.\n\nIf the tool stops working, your AI reads its errors and its activity. Going back to the previous version takes a few seconds.\n\nThe credentials for your other software stay in while.sh, and your AI never sees them. A person also approves before someone is given a right. The history shows who did what.\n\nYour tools are hosted in France by Nextmap.",
+        "longDescription": "You built a tool with your AI. It works, but it stays in the conversation, and no one else can use it.\n\nWith while.sh, your AI deploys it, and the tool has its own address in 3 minutes. You choose who uses it. When you share it with your colleagues, only they can use it. A client or a supplier uses it with an access link, valid for 1, 7 or 30 days, and a password your AI never sees. Before it goes online for everyone, a person on your team approves.\n\nThe tool keeps your data, backed up every day. You can put this data back as it was at any point in the last 14 days, once a person has approved. The tool also keeps your files. Its automations run at a set time, every Monday at 8 for example.\n\nIf the tool stops working, your AI reads its errors and its activity. Going back to the previous version takes a few seconds.\n\nThe credentials for your other software stay in while.sh, and your AI never sees them. A person also approves before someone is given a right. The history shows who did what.\n\nYour tools are hosted in France by Nextmap.",
         "developerName": "Nextmap",
         "category": "Developer tools",
         "websiteURL": "https://while.sh/en/",
