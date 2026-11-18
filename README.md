@@ -34,6 +34,7 @@ Or connect it yourself:
 |---|---|
 | Claude Code | `claude mcp add --transport http --scope user while https://app.while.sh/mcp`, or this repository as a plugin: `/plugin marketplace add while-sh/while`, then `/plugin install while@while-sh` |
 | Codex | `codex mcp add while --url https://app.while.sh/mcp`, then `codex mcp login while` |
+| Hermes Agent | `hermes mcp add while --url https://app.while.sh/mcp --auth oauth --connect-timeout 300`, then add `trust: untrusted` to the `mcp_servers.while` entry in `config.yaml`: Hermes then asks before every tool that is not read-only |
 | Gemini CLI | `gemini extensions install https://github.com/while-sh/while` |
 | Cursor, VS Code | The buttons above |
 | Claude, ChatGPT, Mistral Vibe | Add a custom connector with the server address above |

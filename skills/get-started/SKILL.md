@@ -1,6 +1,6 @@
 ---
 name: get-started
-description: Deploy an app with while, the PaaS for AI agents, over its MCP server. Use when the user asks to put an app online with while, to add a database, a cache, a bucket or a scheduled job to it, or to understand why an app on while fails.
+description: Deploy, host and share an app with while (while.sh) over its MCP server. Use when the user asks to put an app online with while, to add a database, a cache, a bucket or a scheduled job to it, or to understand why an app on while fails.
 ---
 
 # Deploy with while

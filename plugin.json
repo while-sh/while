@@ -20,6 +20,13 @@
     "internal-tools"
   ],
   "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "while": {
+          "trust": "untrusted"
+        }
+      }
+    },
     "com.openai": {
       "interface": {
         "displayName": "while.sh",
