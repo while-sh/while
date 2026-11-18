@@ -2,11 +2,12 @@
 
 # while.sh
 
-while (while.sh) puts the apps your agent builds online, for your team only or for everyone. Claude, ChatGPT, Cursor or
-any MCP agent deploys the app with what it needs: a PostgreSQL database backed up every day, scheduled jobs, file
-storage, a custom domain and, for an internal app, sign-in with your company account. Credentials for other services
-stay in while, never in the code or the chat, and sensitive actions wait for a person's approval. Hosted in France by
-Nextmap.
+while (while.sh) puts the tools you build with Claude or ChatGPT online, and you choose who uses them: your colleagues,
+a client or a supplier with a link and a password, or everyone. Your tool is online in 3 minutes, with no sign-up, and
+you keep it by creating your account. The tool keeps your data, backed up every day, and your files. Its automations run
+at a set time. It can have an address of your own. The credentials for your other software stay in while.sh, and your AI
+never sees them. For everyone to use a tool, a person on your team approves first. while.sh works with Claude, ChatGPT,
+Cursor and any AI that speaks MCP. It is hosted in France by Nextmap.
 
 This repository holds what you need to connect your agent to while, and example apps that deploy as they are.
 

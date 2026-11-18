@@ -1,7 +1,7 @@
 {
   "name": "while",
   "version": "1.0.0",
-  "description": "Deploy the apps your agent builds, for your team only or for everyone. Free to try without an account. Hosted in France.",
+  "description": "Tools built with your AI, online for your team, a client or everyone. No sign-up. Hosted in France.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
     "while": {
