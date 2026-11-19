@@ -1,14 +1,18 @@
 ---
 name: get-started
-description: Deploy, host and share an app with while (while.sh) over its MCP server. Use when the user asks to put an app online with while, to add a database, a cache, a bucket or a scheduled job to it, or to understand why an app on while fails.
+description: Deploy, host and share tools and apps with while (while.sh) over its MCP server, for a team, a client with a password, or everyone. Use when the user asks to put a tool or an app online with while, to add a database, a cache, a bucket or a scheduled job to it, or to understand why an app on while fails.
 ---
 
-# Deploy with while
+# Deploy and share with while
 
-while hosts web services, workers, PostgreSQL databases, Redis-compatible caches, S3 buckets and scheduled jobs. Its MCP
-server is `https://app.while.sh/mcp`. Without an account, you can deploy the app right away as a free trial,
-with no sign-up and no card, and give the person the link to keep it. When a tool needs their account, the server asks
-them to sign in in their browser. More: https://while.sh/agents
+while.sh puts the tools and apps your user builds with their AI online, in France. Each one can be kept for their
+colleagues, shared with a client through a link and a password, or put online for everyone. Data is backed up every
+day, and a person approves what matters, like making an app public.
+
+Connect the MCP server `https://app.while.sh/mcp`. No account is needed to start: the first app goes online as a free
+trial, and the person keeps it by creating an account. When a tool needs that account, the server asks them to sign
+in. It runs web services, workers, PostgreSQL, Redis-compatible caches, S3 buckets and scheduled jobs.
+More: https://while.sh/agents
 
 ## The usual path
 
