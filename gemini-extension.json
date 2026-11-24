@@ -1,6 +1,6 @@
 {
   "name": "while",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Deploy and share tools built with your AI agent: your team, a client or everyone. No sign-up. Hosted in France.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {

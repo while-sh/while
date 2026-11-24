@@ -33,8 +33,11 @@ More: https://while.sh/agents
    A database is two more lines (`databases:` then `- name: main`); its address arrives in `DATABASE_URL`. The schema
    is at `https://app.while.sh/schema/while.v1.json`.
 3. See what will change and what it costs each month before touching anything (`plan_deploy`).
-4. Send the code (`upload_source`: with a terminal, it returns a `curl` command), then put the app online
-   (`deploy_app`). The deployment waits until the app is online and returns its address.
+4. Send the code, then put the app online (`deploy_app`). Without a terminal, `write_files` commits `while.yaml` and
+   the code. From a terminal, `git push` once `get_git_credentials` has set up while's Git helper (the person confirms
+   the machine once, and Git keeps the token in its keychain), or `upload_source` and its `curl` command where your
+   client offers it. A project linked to GitHub or GitLab (`link_git_repo`) deploys from a push to the forge. The
+   deployment waits until the app is online and returns its address.
 5. Follow the app: its state (`get_app_status`), its logs (`get_logs`), its metrics, traces and errors
    (`observe_app`). To go back to the previous release: `rollback_app`.
 
