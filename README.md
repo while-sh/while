@@ -37,7 +37,8 @@ Or connect it yourself:
 | Hermes Agent | `hermes mcp add while --url https://app.while.sh/mcp --auth oauth --connect-timeout 300`, then add `trust: untrusted` to the `mcp_servers.while` entry in `config.yaml`: Hermes then asks before every tool that is not read-only |
 | Gemini CLI | `gemini extensions install https://github.com/while-sh/while` |
 | Cursor, VS Code | The buttons above |
-| Claude, ChatGPT, Mistral Vibe | Add a custom connector with the server address above |
+| ChatGPT | Install the [while plugin](https://chatgpt.com/plugins/plugin_asdk_app_6aff264192dc819192f7d686a9468c74) from Plugins, on any plan |
+| Claude, Mistral Vibe | Add a custom connector with the server address above |
 | All of them at once | `curl -fsSL https://app.while.sh/install.sh \| sh` (writes only their config files, in your home folder) |
 
 ## Example apps
